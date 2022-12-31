@@ -1,0 +1,12 @@
+.hour-item{
+    @include flex(row, space-around, center);
+    // padding: 5px 0;
+    width: 100%;
+    &__day{
+        color: $white;
+        text-transform: uppercase;
+    }
+    &__hours{
+        color: $primary-color;
+    }
+}

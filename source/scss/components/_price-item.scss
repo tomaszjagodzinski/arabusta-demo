@@ -1,0 +1,27 @@
+.price-item{
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    &__title{
+        color: $primary-color;
+        width: 100%;
+        border-bottom: 1px solid rgba(205, 205, 205, 0.5);
+    }
+    &__price{
+        color: $black;
+        font-size: 25px;
+        text-align: center;
+    }
+    &__content{
+        color: $dark-grey;
+        font-weight: 300;
+        padding-left: 30px;
+    }
+    &__label-new{
+        width: 100%;
+        height: 100%;
+        padding: 5px 0;
+        background-color: $accent-color;
+        @include flex(row,center,center,0px);
+        color: $white;
+    }
+}

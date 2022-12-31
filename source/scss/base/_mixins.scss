@@ -1,0 +1,57 @@
+@mixin small-up{
+    @media (min-width: #{$bp-small}){
+        @content;
+    }
+}
+
+@mixin medium-up{
+    @media (min-width: #{$bp-medium}){
+        @content;
+    }
+}
+
+@mixin large-up{
+    @media (min-width: #{$bp-large}){
+        @content;
+    }
+}
+
+@mixin transitions($time: null){
+    @if($time){
+        transition: all $time ease-in-out;
+    }
+    @else{
+        transition: all 300ms ease-in-out;
+    }
+}
+@mixin flex($direction: null, $justify: null, $align: null, $gap: null){
+    display: flex;
+    flex-direction: column;
+    @include small-up{
+        @if($direction){
+            flex-direction: $direction;        
+        }
+        @else{
+            flex-direction: row;  
+        }
+    }
+    @if($justify){
+        justify-content: $justify;        
+    }
+    @else{
+        justify-content: flex-start;    
+    }
+    @if($align){
+        align-items: $align;        
+    }
+    @else{
+        align-items: flex-start;    
+    }
+    flex-wrap: nowrap;
+    @if($gap){
+        gap: $gap;        
+    }
+    @else{
+        gap: 10px;    
+    }
+}

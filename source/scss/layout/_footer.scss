@@ -1,0 +1,30 @@
+.footer{
+    &__content{
+        padding: 30px 50px;
+        background-image: url('/dist/images/bg-widget-area.webp');
+        background-size: cover;
+    }
+    &__col{
+        @include flex(column, start,center,20px);
+        &-title{
+            color: $white;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+        }
+        &-content{
+            text-align: center;
+            padding: 0 10px;
+            color: $dark-grey;
+            line-height: 1.5;
+        }
+    }
+    &__copyrights{
+        padding: 10px 0;
+        text-align: center;
+        background-color: $black;
+        color: $white;
+        font-size: 12px;
+    }
+}

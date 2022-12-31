@@ -1,0 +1,46 @@
+.heading{
+    font-weight: 600;
+    &--1{
+        font-size: $font-size-3;
+        line-height: $font-size-3;
+        @include small-up{
+            font-size: $font-size-2;
+            line-height: $font-size-2;
+        }
+        @include medium-up{
+            font-size: $font-size-1;
+            line-height: $font-size-1;
+        }
+    }
+    &--2{
+        font-size: 22px;
+        line-height: 22px;
+        @include small-up{
+            font-size: 28px;
+            line-height: 28px;
+        }
+    }
+    &--3{
+        font-size: 20px;
+        line-height: 20px;
+        @include small-up{
+            font-size: 25px;
+            line-height: 25px;
+        }
+    }
+    &--primary{
+        color: $primary-color;
+    }
+    &--black{
+        color: $black;
+    }
+    &--center{
+        text-align: center;
+    }
+    &--uppercase{
+        text-transform: uppercase;
+    }
+    &--white{
+        color: $white;
+    }
+}

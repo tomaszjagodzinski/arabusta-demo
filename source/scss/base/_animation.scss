@@ -1,0 +1,109 @@
+.animation{
+    position: relative;
+    opacity: 0;
+    -webkit-transition: 600ms;
+    -moz-transition: 600ms;
+    -ms-transition: 600ms;
+    -o-transition: 600ms;
+    transition: 600ms;
+
+    &--normal{
+        top: 40px;
+        &.visible{
+            opacity: 1;
+            top: 0;
+        }
+    }
+    &--slide-right{
+        left: 60px;
+        &.visible{
+            opacity: 1;
+            left: 0;
+        }
+    }
+    &--slide-left{
+        right: 60px;
+        &.visible{
+            opacity: 1;
+            right: 0;
+        }
+    }
+    &--bump{
+        scale: 0.1;
+        &.visible{
+            opacity: 1;
+            scale: 1.0;
+        }
+    }
+
+
+
+    &--delay-100{
+        -webkit-transition-delay: 100ms;
+        -moz-transition-delay: 100ms;
+        -ms-transition-delay: 100ms;
+        -o-transition-delay: 100ms;
+        transition-delay: 100ms;
+    }
+    &--delay-200{
+        -webkit-transition-delay: 200ms;
+        -moz-transition-delay: 200ms;
+        -ms-transition-delay: 200ms;
+        -o-transition-delay: 200ms;
+        transition-delay: 200ms;
+    }
+    &--delay-300{
+        -webkit-transition-delay: 300ms;
+        -moz-transition-delay: 300ms;
+        -ms-transition-delay: 300ms;
+        -o-transition-delay: 300ms;
+        transition-delay: 300ms;
+    }
+    &--delay-400{
+        -webkit-transition-delay: 400ms;
+        -moz-transition-delay: 400ms;
+        -ms-transition-delay: 400ms;
+        -o-transition-delay: 400ms;
+        transition-delay: 400ms;
+    }
+    &--delay-500{
+        -webkit-transition-delay: 500ms;
+        -moz-transition-delay: 500ms;
+        -ms-transition-delay: 500ms;
+        -o-transition-delay: 500ms;
+        transition-delay: 500ms;
+    }
+    &--delay-600{
+        -webkit-transition-delay: 600ms;
+        -moz-transition-delay: 600ms;
+        -ms-transition-delay: 600ms;
+        -o-transition-delay: 600ms;
+        transition-delay: 600ms;
+    }
+    &--delay-700{
+        -webkit-transition-delay: 700ms;
+        -moz-transition-delay: 700ms;
+        -ms-transition-delay: 700ms;
+        -o-transition-delay: 700ms;
+        transition-delay: 700ms;
+    }
+    &--delay-800{
+        -webkit-transition-delay: 800ms;
+        -moz-transition-delay: 800ms;
+        -ms-transition-delay: 800ms;
+        -o-transition-delay: 800ms;
+        transition-delay: 800ms;
+    }
+}
+
+@keyframes frame-animation{
+    from{
+        left: 10px;
+    }
+    50%{
+        left: 20px;
+    }
+    to{
+        left: 10px;
+    }
+}
